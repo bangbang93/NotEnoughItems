@@ -35,10 +35,10 @@ public class NEIModContainer extends DummyModContainer {
     @Override
     public Set<ArtifactVersion> getRequirements() {
         Set<ArtifactVersion> deps = new HashSet<ArtifactVersion>();
-        if (ObfMapping.obfuscated) {
-            deps.add(VersionParser.parseVersionReference("CodeChickenCore@[" + CodeChickenCorePlugin.version + ",)"));
-            deps.add(VersionParser.parseVersionReference("JustEnoughItems@[3.6.8.225,)"));
-        }
+//        if (ObfMapping.obfuscated) {
+//            deps.add(VersionParser.parseVersionReference("CodeChickenCore@[" + CodeChickenCorePlugin.version + ",)"));
+//            deps.add(VersionParser.parseVersionReference("JustEnoughItems@[3.6.8.225,)"));
+//        }
         return deps;
     }
 
