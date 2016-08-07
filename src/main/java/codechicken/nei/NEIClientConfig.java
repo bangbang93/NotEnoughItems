@@ -18,9 +18,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.world.World;
-import net.minecraft.world.storage.SaveFormatComparator;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraft.world.storage.WorldSummary;
 import org.lwjgl.input.Keyboard;
 
 import java.io.File;
@@ -552,7 +550,7 @@ public class NEIClientConfig {
             return;
         }
 
-        List<SaveFormatComparator> saves;
+        List<WorldSummary> saves;
         try {
             saves = Minecraft.getMinecraft().getSaveLoader().getSaveList();
         } catch (Exception e) {
@@ -560,7 +558,7 @@ public class NEIClientConfig {
             return;
         }
         HashSet<String> saveFileNames = new HashSet<String>();
-        for (SaveFormatComparator save : saves) {
+        for (WorldSummary save : saves) {
             saveFileNames.add(save.getFileName());
         }
 

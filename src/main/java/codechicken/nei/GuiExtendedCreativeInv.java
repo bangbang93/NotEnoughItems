@@ -1,6 +1,7 @@
 package codechicken.nei;
 
 import codechicken.lib.render.CCRenderState;
+import codechicken.lib.render.TextureUtils;
 import codechicken.nei.api.INEIGuiHandler;
 import codechicken.nei.api.TaggedInventoryArea;
 import codechicken.nei.util.NEIServerUtils;
@@ -21,7 +22,7 @@ public class GuiExtendedCreativeInv extends GuiContainer implements INEIGuiHandl
     @Override
     protected void drawGuiContainerBackgroundLayer(float var1, int var2, int var3) {
         GlStateManager.color(1, 1, 1, 1);
-        CCRenderState.changeTexture("nei:textures/gui/inv.png");
+        TextureUtils.changeTexture("nei:textures/gui/inv.png");
 
         int x = guiLeft;
         int y = guiTop - 4;

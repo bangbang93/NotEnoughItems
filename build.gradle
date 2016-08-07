@@ -29,10 +29,14 @@ configFile.withReader {
 
 //add dependency repositories
 repositories {
-	maven {
-		name ="Covers1624 Repo"
-		url = "http://adel.podgeweb.com:1616/maven/"
-	}
+    maven {
+        name = "CB Repo."
+        url = "http://chickenbones.net/maven/"
+    }
+    maven {
+        name = "JEI Maven."
+        url = "http://dvs1.progwml6.com/files/maven"
+    }
 }
 
 dependencies {
