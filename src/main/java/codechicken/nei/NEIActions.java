@@ -62,7 +62,7 @@ public class NEIActions {
     }
 
     public static final String[] timeZones = new String[] { "dawn", "noon", "dusk", "midnight" };
-    public static final String[] gameModes = new String[] { "survival", "creative", "creative+", "adventure" };
+    public static final String[] gameModes = new String[] { "survival", "creative", "creative+", "adventure", "spectator" };
 
     public String name;
     public String base;

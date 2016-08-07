@@ -254,15 +254,17 @@ public class NEIServerUtils {
 
     public static GameType getGameType(int mode) {
         switch (mode) {
-        case 0:
-            return GameType.SURVIVAL;
-        case 1:
-        case 2:
-            return GameType.CREATIVE;
-        case 3:
-            return GameType.ADVENTURE;
+            case 0:
+                return GameType.SURVIVAL;
+            case 1:
+            case 2:
+                return GameType.CREATIVE;
+            case 3:
+                return GameType.ADVENTURE;
+            case 4:
+                return GameType.SPECTATOR;
         }
-        return null;
+        return GameType.NOT_SET;
     }
 
     public static void setGamemode(EntityPlayerMP player, int mode) {

@@ -247,7 +247,7 @@ public class NEIClientUtils extends NEIServerUtils {
         if (hasSMPCounterPart()) {
             NEIClientPacketHandler.sendGamemode(nmode);
         } else {
-            sendCommand(getStringSetting("command.creative"), getGameType(nmode), mc().thePlayer.getName());
+            sendCommand(getStringSetting("command.creative"), getGameType(nmode).getName(), mc().thePlayer.getName());
         }
     }
 
